@@ -6,20 +6,35 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int[] newnumbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
-        int sum = 0;
-        for (int i = 0; i < newnumbers.length; i++)
-        {System.out.println(newnumbers[i]);}
 
-        for (int i = 0; i < newnumbers.length; i++)
-            sum += newnumbers[i];
+    Tforpeople Full2 = new Tforpeople();
+    Full2.fill(10);
+    Full2.transfer("людей","Саратов",50);
 
-        {System.out.println(sum);}
+    Tforcoal Full3 = new Tforcoal();
+    Full3.fill(30);
+    Full3.transfer2("Уголь","Звенигород",1000);
 
-        if ( sum % 2 == 0 )
-            System.out.println("Число четное");
-        else
-            System.out.println("Число нечетное");
+    Conductor a = new Conductor();
+    a.about("Вася ",30,'m'," лет проводник");
+    a.mood("У Васи хорошее настроение");
+
+
+    Passenger b = new Passenger();
+    b.about("Маша",70,'w'," лет студентка");
+    b.mood("У Маши плохое настроение");
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
